@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/agavrilenko/Coding/Pandas/main.cpp
+fstream
+-
+vector
+-
+iterator
+-
+string
+-
+algorithm
+-
+iostream
+-
+
