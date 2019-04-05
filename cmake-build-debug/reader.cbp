@@ -84,7 +84,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/agavrilenko/Coding/Pandas/Group.h">
+			<Option target="reader"/>
+		</Unit>
+		<Unit filename="/home/agavrilenko/Coding/Pandas/day.h">
+			<Option target="reader"/>
+		</Unit>
+		<Unit filename="/home/agavrilenko/Coding/Pandas/dept.h">
+			<Option target="reader"/>
+		</Unit>
+		<Unit filename="/home/agavrilenko/Coding/Pandas/lesson.h">
+			<Option target="reader"/>
+		</Unit>
 		<Unit filename="/home/agavrilenko/Coding/Pandas/main.cpp">
+			<Option target="reader"/>
+		</Unit>
+		<Unit filename="/home/agavrilenko/Coding/Pandas/reader.h">
 			<Option target="reader"/>
 		</Unit>
 		<Unit filename="/home/agavrilenko/Coding/Pandas/CMakeLists.txt">
