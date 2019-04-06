@@ -1,18 +1,10 @@
-//
-// Created by agavrilenko on 05.04.19.
-//
-
 #ifndef READER_GROUP_H
 #define READER_GROUP_H
-
 
 #include <fstream>
 #include <vector>
 #include <iterator>
 #include <string>
-#include <algorithm>
-#include <unordered_map>
-//#include <boost/algorithm/string.hpp>
 #include <iostream>
 #include "day.h"
 class Group {

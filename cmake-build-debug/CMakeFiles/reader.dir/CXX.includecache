@@ -15,10 +15,6 @@ iterator
 -
 string
 -
-algorithm
--
-unordered_map
--
 iostream
 -
 day.h
@@ -74,6 +70,8 @@ string
 algorithm
 -
 iostream
+-
+map
 -
 reader.h
 /home/agavrilenko/Coding/Pandas/reader.h

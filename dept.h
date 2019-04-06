@@ -16,6 +16,10 @@
 #include <map>
 #include "Group.h"
 #include "reader.h"
+
+const int default_day = 777;
+const std::string default_group = "NaN";
+
 class Department {
 public:
     int deptNumber;
@@ -27,23 +31,32 @@ public:
 
     Department( DataFrame table) {
         for(size_t i = 0; i < table.header.size(); i++){
-            std::cout << table.header[i] << ":\n";
+           // std::cout << table.header[i] << ":\n";
             groups[table.header[i]] = Group(table.header[i], table.data[i]);
         }
     }
 
 
-    void print();
+    void print(std::string group_id = "", int day_id = default_day);
    // int getLessonsNumber();
 
 };
 
-void Department::print() {
+void Department::print(std::string group_id, int day_id) {
 
-    for (std::pair<std::string, Group> element : groups) {
-        element.second.print();
-        std::cout << std::endl;
+    //print a group
+    if (group_id != default_group) {
+        std::cout << "printing group: " << group_id << std::endl;
+        groups[group_id].print();
     }
+    //print all groups
+    else {
+        for (std::pair<std::string, Group> element : groups) {
+            element.second.print();
+            std::cout << std::endl;
+        }
+    }
+
 }
 
 #endif //READER_DEPT_H

@@ -76,8 +76,8 @@ void DataFrame::read_csv(std::string fileName)
 
 
     if(getline(file, line)) {
-        std::cout << "Get header:\n";
-        std::cout << line << "\n";
+       // std::cout << "Get header:\n";
+       // std::cout << line << "\n";
         header = split(line, delimiter);
     }
     // Iterate through each line and split the content using delimeter

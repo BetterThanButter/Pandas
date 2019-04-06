@@ -26,10 +26,11 @@ public:
     Day(std::vector <std::string> data)
     {
         for(size_t i = 0; i < data.size(); i++) {
-            Lesson one_lesson(data[i]);
+            Lesson one_lesson(i, data[i]);
             lessons.push_back(one_lesson);
         }
     };
+
     void print();
     int getLessonsNumber();
 
@@ -48,6 +49,7 @@ void Day::print() {
 
     for (size_t i = 0; i < lessons.size(); i++) {
         lessons[i].print();
+        std::cout << std::endl;
     }
 };
 
