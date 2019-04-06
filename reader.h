@@ -60,11 +60,11 @@ void DataFrame::print(int rows_number)
     std::cout<< "Printig data:\n";
     for (size_t i = 0; i < rows_number; i++) {
         for (size_t j = 0; j < data[i].size(); j++) {
-            std::cout << data[i][j] << " $ ";
+            std::cout << data[i][j] << " ";
         }
         std::cout << std::endl;
     }
-    std::cout << "Success\n";
+
 };
 
 void DataFrame::read_csv(std::string fileName)
@@ -88,7 +88,7 @@ void DataFrame::read_csv(std::string fileName)
     }
     // Close the File
 
-    transpose(this->data);
+    //transpose(this->data);
     file.close();
 }
 

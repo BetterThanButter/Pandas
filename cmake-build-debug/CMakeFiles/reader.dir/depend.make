@@ -6,5 +6,6 @@ CMakeFiles/reader.dir/main.cpp.o: ../day.h
 CMakeFiles/reader.dir/main.cpp.o: ../dept.h
 CMakeFiles/reader.dir/main.cpp.o: ../lesson.h
 CMakeFiles/reader.dir/main.cpp.o: ../main.cpp
+CMakeFiles/reader.dir/main.cpp.o: ../prep.h
 CMakeFiles/reader.dir/main.cpp.o: ../reader.h
 

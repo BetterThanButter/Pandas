@@ -29,10 +29,11 @@ public:
             deptNumber(deptNumber)
     { }
 
-    Department( DataFrame table) {
+    Department( DataFrame table, std::unordered_map <std::string, Professor> preps_map) {
+        transpose(table.data);
         for(size_t i = 0; i < table.header.size(); i++){
            // std::cout << table.header[i] << ":\n";
-            groups[table.header[i]] = Group(table.header[i], table.data[i]);
+            groups[table.header[i]] = Group(table.header[i], table.data[i], preps_map);
         }
     }
 

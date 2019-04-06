@@ -25,7 +25,7 @@ public:
             name(name)
             { };
 
-    Day(int day_id, std::vector <std::string> data)
+    Day(int day_id, std::vector <std::string> data, std::unordered_map <std::string, Professor> preps_map)
     {
 
         std::map< int, std::string > week_days;
@@ -40,7 +40,7 @@ public:
         name = week_days[day_id];
 
         for(size_t i = 0; i < data.size(); i++) {
-            Lesson one_lesson(i, data[i]);
+            Lesson one_lesson(i, data[i],preps_map);
             lessons.push_back(one_lesson);
         }
     };

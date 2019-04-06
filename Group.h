@@ -18,7 +18,7 @@ public:
             groupNumber(groupNumber)
             { };
 
-    Group(std::string groupNumber, std::vector<std::string> data) :
+    Group(std::string groupNumber, std::vector<std::string> data, std::unordered_map <std::string, Professor> preps_map) :
             groupNumber(groupNumber)
     {
         for(size_t i = 0; i < data.size(); i+=7) {
@@ -27,7 +27,7 @@ public:
             std::vector<std::string>::const_iterator last = data.begin() + i + 7;
             std::vector<std::string> newVec(first, last);
 
-            Day one_day(i/7, newVec);
+            Day one_day(i/7, newVec, preps_map);
             days.push_back(one_day);
         }
     };
