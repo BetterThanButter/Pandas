@@ -11,7 +11,7 @@
 #include <unordered_map>
 #include "reader.h"
 #include "prep.h"
-
+#include <iomanip>
 class Lesson {
 public:
     bool exist;
@@ -48,17 +48,15 @@ public:
             professor = raw_data[1];
             room = raw_data[2];
             time = time_splits[i];
-            //std::cout << professor << std::endl;
-            //std::cout << data << std::endl;
+
             std::vector <std::string> raw_preps = split(professor, "_");
             for(size_t i = 0; i < raw_preps.size(); i++) {
-                //std::cout << "hash: " << raw_preps[i] ;
+
                 Professor realPrep = Professor(preps_map[raw_preps[i]]);
                 prep_list.push_back(realPrep);
             }
         }
-//        this->print();
-//        std::cout << std::endl;
+
     };
 
     void print();
@@ -67,8 +65,8 @@ public:
 
 void Lesson::print() {
 
-    std::cout << "subject: " << subject << " ";
-    std::cout << "room: " << room << " ";
+    std::cout  <<  "subject: "  << subject << " ";
+    std::cout  << "room: " << room << " ";
 
     for(size_t i = 0; i < prep_list.size(); i++) {
 

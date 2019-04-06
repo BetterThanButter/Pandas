@@ -11,7 +11,7 @@
 #include "reader.h"
 #include "dept.h"
 #include "dept.h"
-
+#include <iomanip>
 
 int main()
 {
@@ -25,17 +25,18 @@ int main()
     preps.read_csv("/home/agavrilenko/Coding/Pandas/data_hashed.csv");
     //preps.print(1);
 
+    //load preps(check data_hashed)
     for (size_t i = 0; i< preps.data.size(); i++) {
-        std::string hash = preps.data[i][9];
 
+        std::string hash = preps.data[i][9];
         preps_map[hash] = Professor(preps.data[i]);
 
-        //std:: cout << hash << std::endl;
     }
 
     Department new_dep(df, preps_map);
     //give print string group number and day number(int)
-    new_dep.print("778");
+    new_dep.print("775");
+
 
     return 0;
 

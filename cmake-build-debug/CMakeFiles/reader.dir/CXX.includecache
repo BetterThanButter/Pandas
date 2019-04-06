@@ -79,6 +79,8 @@ reader.h
 /home/agavrilenko/Coding/Pandas/reader.h
 prep.h
 /home/agavrilenko/Coding/Pandas/prep.h
+iomanip
+-
 
 /home/agavrilenko/Coding/Pandas/main.cpp
 fstream
@@ -103,6 +105,8 @@ dept.h
 /home/agavrilenko/Coding/Pandas/dept.h
 dept.h
 /home/agavrilenko/Coding/Pandas/dept.h
+iomanip
+-
 
 /home/agavrilenko/Coding/Pandas/prep.h
 fstream
