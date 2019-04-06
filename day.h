@@ -12,6 +12,8 @@
 //#include <boost/algorithm/string.hpp>
 #include <iostream>
 #include "lesson.h"
+
+
 class Day
 {
 public:
@@ -23,8 +25,20 @@ public:
             name(name)
             { };
 
-    Day(std::vector <std::string> data)
+    Day(int day_id, std::vector <std::string> data)
     {
+
+        std::map< int, std::string > week_days;
+        week_days[0] = "Понедельник";
+        week_days[1] = "Вторник";
+        week_days[2] = "Среда";
+        week_days[3] = "Четверг";
+        week_days[4] = "Пятница";
+        week_days[5] = "Суббота";
+        week_days[6] = "Воскресение";
+
+        name = week_days[day_id];
+
         for(size_t i = 0; i < data.size(); i++) {
             Lesson one_lesson(i, data[i]);
             lessons.push_back(one_lesson);
@@ -46,7 +60,7 @@ int Day::getLessonsNumber() {
     return number;
 }
 void Day::print() {
-
+    std::cout << "day: " << name << std::endl;
     for (size_t i = 0; i < lessons.size(); i++) {
         lessons[i].print();
         std::cout << std::endl;

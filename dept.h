@@ -17,7 +17,7 @@
 #include "Group.h"
 #include "reader.h"
 
-const int default_day = 777;
+
 const std::string default_group = "NaN";
 
 class Department {
@@ -46,8 +46,14 @@ void Department::print(std::string group_id, int day_id) {
 
     //print a group
     if (group_id != default_group) {
-        std::cout << "printing group: " << group_id << std::endl;
-        groups[group_id].print();
+        std::cout << "group: " << group_id << std::endl;
+        if (day_id != default_day) {
+            groups[group_id].print(day_id);
+        }
+        else {
+            groups[group_id].print();
+        }
+
     }
     //print all groups
     else {

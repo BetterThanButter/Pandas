@@ -7,6 +7,8 @@
 #include <string>
 #include <iostream>
 #include "day.h"
+const int default_day = 777;
+
 class Group {
 public:
     std::string groupNumber;
@@ -25,22 +27,28 @@ public:
             std::vector<std::string>::const_iterator last = data.begin() + i + 7;
             std::vector<std::string> newVec(first, last);
 
-            Day one_day(newVec);
+            Day one_day(i/7, newVec);
             days.push_back(one_day);
         }
     };
 
-    void print();
+    void print(int day_id = default_day);
     int getLessonsNumber();
 
 };
 
-void Group::print() {
+void Group::print(int day_id) {
 
-    for (size_t i = 0; i < days.size(); i++) {
-        days[i].print();
-        std::cout << std::endl;
+    if(day_id != default_day ){
+        days[day_id].print();
     }
+    else {
+        for (size_t i = 0; i < days.size(); i++) {
+            days[i].print();
+            std::cout << std::endl;
+        }
+    }
+
 }
 
 

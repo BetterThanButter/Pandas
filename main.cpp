@@ -24,7 +24,9 @@ int main()
     df.read_csv("/home/agavrilenko/Coding/Pandas/rt.csv");
     //df.print(1);
     Department new_dep(df);
-    new_dep.print("777");
+    //give print string group number and day number(int)
+    new_dep.print("777", 3);
+    
 
 
     return 0;
