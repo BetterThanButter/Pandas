@@ -60,7 +60,7 @@ void DataFrame::print(int rows_number)
     std::cout<< "Printig data:\n";
     for (size_t i = 0; i < rows_number; i++) {
         for (size_t j = 0; j < data[i].size(); j++) {
-            std::cout << data[i][j] << " ";
+            std::cout << data[i][j].size() << " ";
         }
         std::cout << std::endl;
     }
@@ -83,10 +83,12 @@ void DataFrame::read_csv(std::string fileName)
     // Iterate through each line and split the content using delimeter
     while (getline(file, line))
     {
+
         std::vector <std::string> row = split(line, delimiter);
         data.push_back(row);
     }
     // Close the File
+
 
     //transpose(this->data);
     file.close();

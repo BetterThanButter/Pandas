@@ -4,26 +4,31 @@
 #include <string>
 #include <algorithm>
 #include <map>
-//#include <boost/algorithm/string.hpp>
 #include <iostream>
-
+#include <dirent.h>
 #include "prep.h"
 #include "reader.h"
 #include "dept.h"
+#include <string.h>
 #include "dept.h"
 #include <iomanip>
+#include <experimental/filesystem>
+#include "grade.h"
+
+namespace fs = std::experimental::filesystem;
+const std::string path_to_dir = "/home/agavrilenko/Coding/Pandas/departments_2/";
 
 int main()
 {
     // Creating an object of CSVWriter
-    DataFrame df;
+   // DataFrame df;
     DataFrame preps;
     std::unordered_map <std::string, Professor> preps_map;
 
     // Get the data from CSV File
-    df.read_csv("/home/agavrilenko/Coding/Pandas/rt.csv");
+    //df.read_csv("/home/agavrilenko/Coding/Pandas/departments_2/1.csv");
     preps.read_csv("/home/agavrilenko/Coding/Pandas/data_hashed.csv");
-    //preps.print(1);
+
 
     //load preps(check data_hashed)
     for (size_t i = 0; i< preps.data.size(); i++) {
@@ -33,9 +38,9 @@ int main()
 
     }
 
-    Department new_dep(df, preps_map);
-    //give print string group number and day number(int)
-    new_dep.print("775");
+    Grade new_grade(path_to_dir, preps_map);
+//paramerts
+    new_grade.print("7", "", 5);
 
 
     return 0;

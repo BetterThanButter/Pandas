@@ -93,6 +93,9 @@
 		<Unit filename="/home/agavrilenko/Coding/Pandas/dept.h">
 			<Option target="reader"/>
 		</Unit>
+		<Unit filename="/home/agavrilenko/Coding/Pandas/grade.h">
+			<Option target="reader"/>
+		</Unit>
 		<Unit filename="/home/agavrilenko/Coding/Pandas/lesson.h">
 			<Option target="reader"/>
 		</Unit>

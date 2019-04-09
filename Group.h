@@ -39,6 +39,7 @@ public:
 
 void Group::print(int day_id) {
 
+    std::cout << "group_id:" << groupNumber << std::endl;
     if(day_id != default_day ){
         days[day_id].print();
     }
