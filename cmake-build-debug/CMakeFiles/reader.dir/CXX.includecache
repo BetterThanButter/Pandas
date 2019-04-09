@@ -85,8 +85,6 @@ dirent.h
 -
 string.h
 -
-bits/stdc++.h
--
 
 /home/agavrilenko/Coding/Pandas/lesson.h
 fstream
@@ -140,8 +138,6 @@ string.h
 dept.h
 /home/agavrilenko/Coding/Pandas/dept.h
 iomanip
--
-experimental/filesystem
 -
 grade.h
 /home/agavrilenko/Coding/Pandas/grade.h

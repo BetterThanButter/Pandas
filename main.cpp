@@ -12,11 +12,12 @@
 #include <string.h>
 #include "dept.h"
 #include <iomanip>
-#include <experimental/filesystem>
 #include "grade.h"
 
-namespace fs = std::experimental::filesystem;
-const std::string path_to_dir = "/home/agavrilenko/Coding/Pandas/departments_2/";
+//path to project
+const std::string path_to_dir = "/home/agavrilenko/Coding/Pandas/";
+const std::string path_to_rawdata = "departments_2/";
+const std::string path_to_preps = "data_hashed.csv";
 
 int main()
 {
@@ -27,8 +28,9 @@ int main()
 
     // Get the data from CSV File
     //df.read_csv("/home/agavrilenko/Coding/Pandas/departments_2/1.csv");
-    preps.read_csv("/home/agavrilenko/Coding/Pandas/data_hashed.csv");
 
+    preps.read_csv(path_to_dir + path_to_preps);
+ //   preps.print(2);
 
     //load preps(check data_hashed)
     for (size_t i = 0; i< preps.data.size(); i++) {
@@ -38,9 +40,9 @@ int main()
 
     }
 
-    Grade new_grade(path_to_dir, preps_map);
+    Grade new_grade(path_to_dir, path_to_rawdata, preps_map);
 //paramerts
-    new_grade.print("7", "", 5);
+    new_grade.print("7", "778", 5);
 
 
     return 0;

@@ -60,7 +60,7 @@ void DataFrame::print(int rows_number)
     std::cout<< "Printig data:\n";
     for (size_t i = 0; i < rows_number; i++) {
         for (size_t j = 0; j < data[i].size(); j++) {
-            std::cout << data[i][j].size() << " ";
+            std::cout << data[i][j] << " ";
         }
         std::cout << std::endl;
     }

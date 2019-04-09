@@ -18,7 +18,7 @@
 #include "dept.h"
 #include <dirent.h>
 #include <string.h>
-#include <bits/stdc++.h>
+
 
 
 
@@ -32,13 +32,17 @@ public:
             gradeNumber(gradeNumber)
     { }
 
-    Grade( std::string path_to_dir, std::unordered_map <std::string, Professor> preps_map) {
+    Grade( const std::string path_to_dir, const std::string path_to_rawdata, std::unordered_map <std::string, Professor> preps_map) {
 
         DIR *dir;
         struct dirent *ent;
         std::vector<std::string> file_names;
+
         const char* mask = ".csv";
-        if ((dir = opendir ("/home/agavrilenko/Coding/Pandas/departments_2/")) != NULL) {
+        const std::string path = path_to_dir + path_to_rawdata;
+
+
+        if ((dir = opendir(path.c_str())) != NULL) {
             /* print all the files and directories within directory */
             while ((ent = readdir (dir)) != NULL) {
                 if(strstr(ent->d_name, mask) != NULL) {
@@ -59,8 +63,8 @@ public:
         for (std::vector<std::string>::const_iterator i = file_names.begin(); i != file_names.end(); ++i) {
 
             DataFrame df;
-            std::cout << path_to_dir + *i << std::endl;
-            df.read_csv(path_to_dir + *i);
+            std::cout << path + *i << std::endl;
+            df.read_csv(path + *i);
 
             std::string dep_number = (*i).substr(0, (*i).size()-4);
             Department new_dep(dep_number, df, preps_map);
@@ -80,8 +84,9 @@ public:
 void Grade::print(std::string dep_id, std::string group_id, int day_id) {
 
     //print a group
-
+    std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~ Printing ~~~~~~~~~~~~~~~~~~~~~" << std::endl;
     if (dep_id != "") {
+
         departments[dep_id].print(group_id, day_id);
     }
     else {
