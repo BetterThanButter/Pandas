@@ -26,6 +26,7 @@ int main()
     DataFrame preps;
     std::unordered_map <std::string, Professor> preps_map;
 
+
     // Get the data from CSV File
     //df.read_csv("/home/agavrilenko/Coding/Pandas/departments_2/1.csv");
 
@@ -41,8 +42,15 @@ int main()
     }
 
     Grade new_grade(path_to_dir, path_to_rawdata, preps_map);
-//paramerts
-    new_grade.print("7", "778", 5);
+    std::string mygroup_name = "";
+    std::cin >> mygroup_name;
+    Group my_group = new_grade.group_map[mygroup_name];
+    //paramerts
+    //new_grade.print("771");
+    my_group.print();
+    my_group.shuffle();
+    my_group.print();
+
 
 
     return 0;

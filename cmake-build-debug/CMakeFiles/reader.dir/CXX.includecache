@@ -17,6 +17,14 @@ string
 -
 iostream
 -
+map
+-
+algorithm
+-
+random
+-
+ctime
+-
 day.h
 /home/agavrilenko/Coding/Pandas/day.h
 

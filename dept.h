@@ -22,8 +22,8 @@ const std::string default_group = "";
 class Department {
 public:
     std::string deptNumber;
-
     std::map<std::string, Group> groups;
+
     Department(std::string deptNumber = "0") :
             deptNumber(deptNumber)
     { }

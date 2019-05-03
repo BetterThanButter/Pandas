@@ -89,8 +89,6 @@ void DataFrame::read_csv(std::string fileName)
     }
     // Close the File
 
-
-    //transpose(this->data);
     file.close();
 }
 
