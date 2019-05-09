@@ -12,22 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="925a0cb2-7dd3-40b4-a58b-6f77cc46c726" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Group.h" beforeDir="false" afterPath="$PROJECT_DIR$/Group.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reader.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reader.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reader.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reader.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/reader.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/reader" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/reader" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/departments_2/1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/departments_2/10.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/departments_2/11.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/departments_2/2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/departments_2/3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/departments_2/4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/departments_2/5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/departments_2/6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/departments_2/8.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/departments_2/9.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dept.h" beforeDir="false" afterPath="$PROJECT_DIR$/dept.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_hashed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_hashed.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grade.h" beforeDir="false" afterPath="$PROJECT_DIR$/grade.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson.h" beforeDir="false" afterPath="$PROJECT_DIR$/lesson.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
@@ -40,25 +31,41 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FUSProjectUsageTrigger">
     <session id="1496833546">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.2" value="2" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="cpp" value="2" />
-          <entry key="csv" value="10" />
+          <entry key="csv" value="12" />
+          <entry key="data" value="1" />
           <entry key="h" value="19" />
           <entry key="tuple" value="1" />
           <entry key="txt" value="5" />
@@ -68,34 +75,35 @@
         <counts>
           <entry key="CMakeLists.txt" value="1" />
           <entry key="ObjectiveC" value="22" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="PLAIN_TEXT" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cpp" value="2580" />
-          <entry key="csv" value="13" />
-          <entry key="h" value="7050" />
+          <entry key="cpp" value="4243" />
+          <entry key="csv" value="30" />
+          <entry key="h" value="8398" />
           <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="ObjectiveC" value="9630" />
-          <entry key="PLAIN_TEXT" value="23" />
+          <entry key="ObjectiveC" value="12641" />
+          <entry key="PLAIN_TEXT" value="40" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+            <state relative-caret-position="22">
+              <caret line="96" column="81" selection-start-line="96" selection-start-column="81" selection-end-line="96" selection-end-column="81" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+                <element signature="e#478#759#0" />
               </folding>
             </state>
           </provider>
@@ -104,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/reader.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1710">
-              <caret line="90" selection-start-line="90" selection-end-line="90" />
+            <state relative-caret-position="-572">
+              <caret line="51" column="71" selection-start-line="51" selection-start-column="71" selection-end-line="51" selection-end-column="71" />
               <folding>
                 <element signature="e#95#113#0" expanded="true" />
                 <element signature="e#323#727#0" />
@@ -117,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grade.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1957">
-              <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
+            <state relative-caret-position="167">
+              <caret line="77" column="79" selection-start-line="77" selection-start-column="79" selection-end-line="77" selection-end-column="79" />
               <folding>
                 <element signature="e#93#111#0" expanded="true" />
               </folding>
@@ -126,13 +134,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lesson.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
+            <state relative-caret-position="267">
+              <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
               <folding>
-                <element signature="e#49#67#0" expanded="true" />
+                <element signature="e#48#65#0" expanded="true" />
+                <element signature="e#2531#2791#0" />
+                <element signature="e#2793#3188#0" />
               </folding>
             </state>
           </provider>
@@ -141,7 +151,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/prep.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
+            <state relative-caret-position="209">
               <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
               <folding>
                 <element signature="e#90#108#0" expanded="true" />
@@ -153,23 +163,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Group.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1672">
-              <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+            <state relative-caret-position="687">
+              <caret line="114" selection-start-line="114" selection-end-line="114" />
               <folding>
                 <element signature="e#47#65#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1159">
-              <caret line="61" column="4" selection-start-line="61" selection-start-column="4" selection-end-line="65" selection-end-column="5" />
-              <folding>
-                <element signature="e#88#106#0" expanded="true" />
-                <element signature="e#1048#1245#0" />
               </folding>
             </state>
           </provider>
@@ -199,6 +196,8 @@
       <find>Лун</find>
       <find>Жуков</find>
       <find>Лобач</find>
+      <find>лун</find>
+      <find>лоба</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -214,12 +213,14 @@
         <option value="$PROJECT_DIR$/rt.csv" />
         <option value="$PROJECT_DIR$/prep.h" />
         <option value="$PROJECT_DIR$/day.h" />
-        <option value="$PROJECT_DIR$/reader.h" />
         <option value="$PROJECT_DIR$/dept.h" />
-        <option value="$PROJECT_DIR$/grade.h" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/Group.h" />
+        <option value="$PROJECT_DIR$/data" />
+        <option value="$PROJECT_DIR$/reader.h" />
+        <option value="$PROJECT_DIR$/data_hashed.csv" />
         <option value="$PROJECT_DIR$/lesson.h" />
+        <option value="$PROJECT_DIR$/grade.h" />
+        <option value="$PROJECT_DIR$/Group.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -233,7 +234,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1168" />
     <option name="y" value="27" />
-    <option name="width" value="742" />
+    <option name="width" value="732" />
     <option name="height" value="534" />
   </component>
   <component name="ProjectView">
@@ -241,7 +242,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,12 +251,18 @@
             </path>
             <path>
               <item name="reader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pandas" type="462c0819:PsiDirectoryNode" />
+              <item name="departments_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="reader" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,6 +270,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -309,28 +316,31 @@
       <workItem from="1556187896680" duration="7352000" />
       <workItem from="1556699683691" duration="9909000" />
       <workItem from="1556872002768" duration="42000" />
+      <workItem from="1556878179073" duration="2140000" />
+      <workItem from="1557154646334" duration="4593000" />
+      <workItem from="1557243522095" duration="5290000" />
+      <workItem from="1557325257414" duration="23296000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75041000" />
+    <option name="totallyTimeSpent" value="110360000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0802435" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08245711" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28324324" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.99135137" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.31675676" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.56" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
@@ -338,7 +348,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32982844" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25235197" />
@@ -410,13 +420,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/data.csv" />
-    <entry file="file://$PROJECT_DIR$/data_hashed.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="370" column="53" selection-start-line="370" selection-start-column="53" selection-end-line="370" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rt.csv" />
     <entry file="file:///usr/include/c++/7/experimental/bits/fs_path.h">
       <provider selected="true" editor-type-id="text-editor">
@@ -435,57 +438,6 @@
     <entry file="file://$PROJECT_DIR$/table.csv" />
     <entry file="file://$PROJECT_DIR$/preps_done.csv" />
     <entry file="file://$PROJECT_DIR$/prep.txt" />
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/reader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1710">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
-          <folding>
-            <element signature="e#95#113#0" expanded="true" />
-            <element signature="e#323#727#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grade.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1957">
-          <caret line="103" column="32" selection-start-line="103" selection-start-column="32" selection-end-line="103" selection-end-column="32" />
-          <folding>
-            <element signature="e#93#111#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/prep.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#90#108#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Group.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1672">
-          <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
-          <folding>
-            <element signature="e#47#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1159">
@@ -507,12 +459,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/prep.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding>
+            <element signature="e#90#108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="771">
+          <caret line="1249" lean-forward="true" selection-start-line="1249" selection-end-line="1249" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_hashed.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="651" column="65" selection-start-line="651" selection-start-column="65" selection-end-line="651" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/departments_2/7.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/lesson.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="267">
+          <caret line="62" column="3" lean-forward="true" selection-start-line="62" selection-start-column="3" selection-end-line="62" selection-end-column="3" />
           <folding>
-            <element signature="e#49#67#0" expanded="true" />
+            <element signature="e#48#65#0" expanded="true" />
+            <element signature="e#2531#2791#0" />
+            <element signature="e#2793#3188#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reader.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-572">
+          <caret line="51" column="71" selection-start-line="51" selection-start-column="71" selection-end-line="51" selection-end-column="71" />
+          <folding>
+            <element signature="e#95#113#0" expanded="true" />
+            <element signature="e#323#727#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grade.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="77" column="79" selection-start-line="77" selection-start-column="79" selection-end-line="77" selection-end-column="79" />
+          <folding>
+            <element signature="e#93#111#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Group.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="114" selection-start-line="114" selection-end-line="114" />
+          <folding>
+            <element signature="e#47#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="96" column="81" selection-start-line="96" selection-start-column="81" selection-end-line="96" selection-end-column="81" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#478#759#0" />
           </folding>
         </state>
       </provider>

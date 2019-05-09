@@ -1,6 +1,5 @@
 #ifndef READER_GROUP_H
 #define READER_GROUP_H
-
 #include <fstream>
 #include <vector>
 #include <iterator>
@@ -9,15 +8,18 @@
 #include <map>
 #include <algorithm>
 #include <random>
+#include <set>
 #include <ctime>
 #include "day.h"
-const int default_day = 777;
 
+const int default_day = 777;
+double score_preps(DataFrame preps);
 class Group {
 public:
     std::string groupNumber;
     std::vector <Day> days ;
-    std::map<size_t, Lesson> lesson_map;
+    std::vector <Lesson> lesson_map;
+    std::set <std::string> lesson_set;
 
     Group(std::string groupNumber = "") :
             groupNumber(groupNumber)
@@ -29,9 +31,14 @@ public:
         for(size_t i = 0; i < data.size(); i++) {
 
             //size_t key = i;
-            lesson_map[i] = Lesson(i, data[i],preps_map);
-            //Lesson one_lesson(i, data[i],preps_map);
 
+            lesson_map.push_back(Lesson(i, data[i],preps_map));
+//            Lesson new1 = Lesson(i, data[i],preps_map);
+//            new1.print();
+
+            //Lesson one_lesson(i, data[i],preps_map);
+            std::vector <std::string> raw_data = split(data[i], "#");
+            lesson_set.insert(raw_data[0]);
 //            std::vector<std::string>::const_iterator first = data.begin() + i ;
 //            std::vector<std::string>::const_iterator last = data.begin() + i + 7;
 //            std::vector<std::string> newVec(first, last);
@@ -43,7 +50,7 @@ public:
 
     void print(int day_id = default_day);
     void shuffle();
-    void score();
+    double score(DataFrame preps);
     void swapLessons(Lesson lesson1, Lesson lesson2);
     int getLessonsNumber();
 
@@ -56,33 +63,42 @@ public:
 //    }
 //}
 
-void Group::score() {
-    int Loss = 0;
+double Group::score(DataFrame preps) {
+    double avg_score = score_preps(preps);
+    double Loss = 0;
+    int lesson_number = 0;
 
+    for (int i = 0; i < lesson_map.size(); i++){
+        if (lesson_map[i].exist) {
+            Loss+= lesson_map[i].score(avg_score);
+            lesson_number++;
+        }
+    }
+    return Loss;
 }
 int myrandom (int i) { return std::rand()%i;}
 void Group::shuffle() {
 
 
     srand(time(0));
-    std::map<size_t,Lesson> m = lesson_map;
-    std::vector<size_t> v;
-
-       for(auto i: m)
-    {
-        v.push_back(i.first);
-    }
-    random_shuffle(v.begin(), v.end(),myrandom);
-    std::vector<size_t>::iterator it=v.begin();
-
-    for(auto& i:m)
-    {
-        Lesson ts=i.second;
-        i.second=m[*it];
-        m[*it]=ts;
-        it++;
-    }
-    lesson_map = m;
+//    std::map<size_t,Lesson> m = lesson_map;
+//    std::vector<size_t> v;
+//
+//       for(auto i: m)
+//    {
+//        v.push_back(i.first);
+//    }
+    random_shuffle(lesson_map.begin(), lesson_map.end(),myrandom);
+//    std::vector<size_t>::iterator it=v.begin();
+//
+//    for(auto& i:m)
+//    {
+//        Lesson ts=i.second;
+//        i.second=m[*it];
+//        m[*it]=ts;
+//        it++;
+//    }
+//    lesson_map = m;
 
 }
 
@@ -96,7 +112,7 @@ void Group::print(int day_id) {
         }
         std::cout << "id: " << i << " ";
         lesson_map[i].print();
-        std::cout << std::endl;
+
     }
 
 }

@@ -49,7 +49,7 @@ public:
     { }
 
     // Function to fetch data from a CSV File
-    void read_csv(std::string fileName = "");
+    void read_csv(std::string fileName = "", std::string delimiter = ",");
     void print(int rows_number = 5);
 
 };
@@ -67,17 +67,17 @@ void DataFrame::print(int rows_number)
 
 };
 
-void DataFrame::read_csv(std::string fileName)
+void DataFrame::read_csv(std::string fileName, std::string delimiter)
 {
 
     std::ifstream file(fileName);
-    std::string delimiter = ";";
+  //  std::string delimiter = ";";
     std::string line;
 
 
     if(getline(file, line)) {
-       // std::cout << "Get header:\n";
-       // std::cout << line << "\n";
+//        std::cout << "Get header:\n";
+//        std::cout << line << "\n";
         header = split(line, delimiter);
     }
     // Iterate through each line and split the content using delimeter

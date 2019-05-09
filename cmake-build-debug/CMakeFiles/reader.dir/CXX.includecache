@@ -23,6 +23,8 @@ algorithm
 -
 random
 -
+set
+-
 ctime
 -
 day.h
@@ -95,6 +97,8 @@ string.h
 -
 
 /home/agavrilenko/Coding/Pandas/lesson.h
+math.h
+-
 fstream
 -
 vector
