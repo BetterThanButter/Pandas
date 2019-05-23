@@ -39,13 +39,14 @@ public:
 
     std::string fileName;
     std::string delimeter;
+    bool generated = false;
     std::vector<std::vector<std::string>> data;
 
     std::vector<std::string> header;
 
 
-    DataFrame(std::string filename = "", std::string delm = ",") :
-            fileName(filename), delimeter(delm)
+    DataFrame(std::string filename = "", std::string delm = ",", bool generated = false) :
+            fileName(filename), delimeter(delm), generated(generated)
     { }
 
     // Function to fetch data from a CSV File

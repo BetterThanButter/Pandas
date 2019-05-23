@@ -25,21 +25,27 @@
 class Grade {
 public:
     int gradeNumber;
+    int daysNumber;
+    int lessonNumbers;
 
     //std::map<std::string, Department> departments;
-    std::vector<Group> group_map;
+    std::map<std::string, Group> group_map;
 
-    Grade(int gradeNumber = 0) :
-            gradeNumber(gradeNumber)
+    Grade(int gradeNumber = 0, int daysNumber = 6, int lessonNumbers = 7) :
+            gradeNumber(gradeNumber),
+            daysNumber(daysNumber),
+            lessonNumbers(lessonNumbers)
     { }
 
-    Grade( const std::string path_to_dir, const std::string path_to_rawdata, std::unordered_map <std::string, Professor> preps_map) {
+    Grade( const std::string path_to_dir, const std::string path_to_rawdata, std::unordered_map <std::string, Professor> preps_map, int daysNumber, int lessonNumbers) {
 
+        this->daysNumber = daysNumber;
+        this->lessonNumbers = lessonNumbers;
         DIR *dir;
         struct dirent *ent;
         std::vector<std::string> file_names;
 
-        const char* mask = ".csv";
+        const char* mask = ".txt";
         const std::string path = path_to_dir + path_to_rawdata;
 
 
@@ -47,7 +53,7 @@ public:
             /* print all the files and directories within directory */
             while ((ent = readdir (dir)) != NULL) {
                 if(strstr(ent->d_name, mask) != NULL) {
-                   //printf ("%s\n", ent->d_name);
+                   printf ("%s\n", ent->d_name);
                     std::string str(ent->d_name);
                     file_names.push_back(ent->d_name);
                 }
@@ -74,8 +80,9 @@ public:
             transpose(df.data);
            // deptNumber = dep_number;
             for(size_t i = 0; i < df.header.size(); i++){
-                //std::cout << df.header[i] << ":\n";
-                group_map.push_back(Group(df.header[i], df.data[i], preps_map));
+                //std::cout << "ajsjdl";
+                std::cout << df.header[i] << ":\n";
+                group_map[df.header[i]] = Group(df.header[i],df.data[i], preps_map, daysNumber, lessonNumbers);
             }
 
             //departments[dep_number] = new_dep;
@@ -85,11 +92,11 @@ public:
     }
 
 
-   void print(int group_id = 0, int day_id = default_day);
+   void print(std::string group_id = "777", int day_id = default_day);
 
 };
 //
-void Grade::print(int group_id, int day_id) {
+void Grade::print(std::string group_id, int day_id) {
 
     //print a group
     std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~ Printing ~~~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl;
@@ -101,7 +108,7 @@ void Grade::print(int group_id, int day_id) {
 //            std::cout << "printall" << std::endl;
 //    }
 
-    group_map[group_id].print();
+   // group_map[group_id].print();
 
 }
 

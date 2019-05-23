@@ -39,8 +39,8 @@ public:
         name = week_days[day_id];
 
         for(size_t i = 0; i < data.size(); i++) {
-            Lesson one_lesson(i, data[i],preps_map);
-            lessons.push_back(one_lesson);
+//            Lesson one_lesson(i, data[i],preps_map);
+  //          lessons.push_back(one_lesson);
         }
     };
 

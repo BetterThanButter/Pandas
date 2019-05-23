@@ -33,7 +33,7 @@ public:
         deptNumber = dep_number;
         for(size_t i = 0; i < table.header.size(); i++){
            // std::cout << table.header[i] << ":\n";
-            groups[table.header[i]] = Group(table.header[i], table.data[i], preps_map);
+          //  groups[table.header[i]] = Group(table.header[i], table.data[i], preps_map);
         }
     }
     void print(std::string group_id = "", int day_id = default_day);

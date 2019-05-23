@@ -35,7 +35,7 @@ public:
             time(time)
             { };
 
-    Lesson(size_t i, std::string data, std::unordered_map <std::string, Professor> preps_map) {
+    Lesson(size_t i, std::string data, std::unordered_map <std::string, Professor> preps_map,  int daysNumber, int lessonNumbers) {
 
         std::map< int, std::string > time_splits;
         time_splits[0] = "9:00-10:25";
@@ -57,7 +57,7 @@ public:
             subject = raw_data[0];
             professor = raw_data[1];
             room = raw_data[2];
-            time = time_splits[i%7];
+            time = time_splits[i%lessonNumbers];
             if((subject == "Компьютерные технологии") || (subject == "Общая физика: лаб.практикум") || (subject == "Доп. главы дискретного анализа")  ) {
                 doubled = true;
             }

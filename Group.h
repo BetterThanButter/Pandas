@@ -17,22 +17,28 @@ double score_preps(DataFrame preps);
 class Group {
 public:
     std::string groupNumber;
-    std::vector <Day> days ;
+//    std::vector <Day> days ;
     std::vector <Lesson> lesson_map;
     std::set <std::string> lesson_set;
+    int daysNumber;
+    int lessonNumbers;
 
-    Group(std::string groupNumber = "") :
-            groupNumber(groupNumber)
+    Group(std::string groupNumber = "", int daysNumber = 6, int lessonNumbers = 7) :
+            groupNumber(groupNumber),
+            daysNumber(daysNumber),
+            lessonNumbers(lessonNumbers)
             { };
 
-    Group(std::string groupNumber, std::vector<std::string> data, std::unordered_map <std::string, Professor> preps_map) :
-            groupNumber(groupNumber)
+    Group(std::string groupNumber, std::vector<std::string> data, std::unordered_map <std::string, Professor> preps_map, int daysNumber, int lessonNumbers) :
+            groupNumber(groupNumber),
+            daysNumber(daysNumber),
+            lessonNumbers(lessonNumbers)
     {
         for(size_t i = 0; i < data.size(); i++) {
 
             //size_t key = i;
 
-            lesson_map.push_back(Lesson(i, data[i],preps_map));
+            lesson_map.push_back(Lesson(i, data[i],preps_map, daysNumber, lessonNumbers));
 //            Lesson new1 = Lesson(i, data[i],preps_map);
 //            new1.print();
 
@@ -103,12 +109,12 @@ void Group::shuffle() {
 }
 
 void Group::print(int day_id) {
-
+//
     std::cout << "group_id:" << groupNumber << std::endl;
-
+  //  lesson_map[0].print();
     for (size_t i = 0; i < lesson_map.size(); i++) {
-        if(i%7 == 0) {
-            std::cout <<"day: " << i/6 << std::endl;
+        if(i%lessonNumbers == 0) {
+            std::cout <<"day: " << i/daysNumber << std::endl;
         }
         std::cout << "id: " << i << " ";
         lesson_map[i].print();
